@@ -1,0 +1,17 @@
+#25274D - Background
+#464866 - Dark Purple
+#AAABB8 - Grey
+#2E9CCA - Font
+#29648A - Font 2
+
+
+Slate: #262626
+Secondhand Grey: #3F3F3F
+Whitish: #F5F5F5
+Light grey: #DCDCDC
+
+
+PALE GOLD: #C0B283
+SILK: #DCD0C0
+PAPER: #F4F4F4
+CHARCOAL: #373737
