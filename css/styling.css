@@ -194,6 +194,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 }
 
 
@@ -205,25 +206,43 @@ body {
 }
 
 
-.button {
+.texthome {
+    font-size: 100px;
+    position: absolute;
+    color: #F4F4F4;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.texthome img{
+    width: 25px;
+    height: 25px;
+    position: relative;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+.texthome button {
     border-radius: 0px;
     background-color: transparent;
-    position: fixed;
+    position: relative;
     border: 2px solid black;
-    border-color: #FFFFFF;
-    color: #FFFFFF;
+    border-color: #F4F4F4;
+    color: #F4F4F4;
     text-align: center;
     font-size: 14px;
     padding: 10px;
     width: 150px;
     transition: all 0.5s;
     cursor: pointer;
-    margin-left: 170px;
-    margin-top: 500px;
 }
 
 
-.button span {
+.texthome button span {
     cursor: pointer;
     display: inline-block;
     position: relative;
@@ -231,7 +250,7 @@ body {
 }
 
 
-.button span:after {
+.texthome button span:after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
@@ -241,12 +260,12 @@ body {
 }
 
 
-.button:hover span {
+.texthome button:hover span {
     padding-right: 25px;
 }
 
 
-.button:hover span:after {
+.texthome button:hover span:after {
     opacity: 1;
     right: 0;
 }
