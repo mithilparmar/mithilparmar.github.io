@@ -83,7 +83,7 @@ body {
 .textunder{
     position: relative;
     text-decoration: none;
-    opacity: 0.6;
+    opacity: 0.4;
     transition: 0.3s;
 }
 
@@ -92,6 +92,7 @@ body {
     opacity: 1;
     border-bottom: 1.5px solid #C0B283;
     padding: 0px 0px 5px 0px;
+    transition: 0.3s;
 }
 
 
@@ -104,6 +105,7 @@ body {
 
 .navbar .icon {
     display: none;
+    width: 10%;
 }
 
 
@@ -131,7 +133,7 @@ body {
 }
 
 
-.header {
+.navbar a.header {
     padding: 25px 25px;
     float: left;
     font-family: 'azedolight';
@@ -172,7 +174,7 @@ body {
 
 
 .bg { 
-    background-image: url("../img/img1.jpg");
+    background-image: url("../img/img2.JPG");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -189,7 +191,7 @@ body {
 
 
 .bghome { 
-    background-image: url("../img/bg.jpg");
+    background-image: url("../img/img1.JPG");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -209,6 +211,7 @@ body {
 .texthome {
     font-size: 100px;
     position: absolute;
+    width: 800px;
     color: #F4F4F4;
     text-align: center;
     top: 50%;
@@ -217,12 +220,8 @@ body {
 }
 
 
-.texthome img{
-    width: 25px;
-    height: 25px;
-    position: relative;
-    margin-left: 5px;
-    margin-right: 5px;
+.texthome p{
+    font-size: 30px;
 }
 
 
@@ -268,4 +267,75 @@ body {
 .texthome button:hover span:after {
     opacity: 1;
     right: 0;
+}
+
+
+.parent a{
+    transition: 0.3s;
+}
+
+
+.parent > .social div {
+    float: none;
+    padding: 1px;
+}
+
+
+.social div {
+    opacity: 1;
+    margin: 0 auto;
+}
+
+
+.parent:hover img {
+    opacity: 0.5;
+}
+
+
+.parent img:hover {
+    opacity: 1;
+    transform: scale(1.25, 1.25);
+    transition: 0.3s;
+}
+
+
+.social {
+    font-size: 100px;
+    position: absolute;
+    color: #F4F4F4;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 225px;
+    height: 30px;
+}
+
+
+.social img{
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: -150%;
+    transition: 0.3s;
+}
+
+
+.social a {
+    height: 45px;
+    position: relative;
+    display: inline-block;
+}
+
+
+@media screen and (max-width: 800px) {
+    .texthome {
+        font-size: 55px;
+        width: 410px;
+    }
+    .texthome p {
+        font-size: 15px;
+    }
+    .social img {
+        top: -50%;
+    }
 }
