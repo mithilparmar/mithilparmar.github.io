@@ -172,7 +172,7 @@ body {
 
 
 .bg { 
-    background-image: url("../img/img1.jpg");
+    background-image: url("../img/img1.JPG");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -189,7 +189,7 @@ body {
 
 
 .bghome { 
-    background-image: url("../img/bg.jpg");
+    background-image: url("../img/bg.JPG");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
