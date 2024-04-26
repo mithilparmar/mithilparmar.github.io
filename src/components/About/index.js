@@ -35,19 +35,29 @@ const About = () => {
                             idx={15}
                         />
                     </h1>
-                    <p>In the bustling tech landscape of the Bay Area, I’m Mithil Parmar, a Master’s Degree Graduate 
-                        from San Jose State University in Artificial Intelligence, where I blended theoretical knowledge 
-                        with practical application, with a 3.61 GPA.</p>
-                    <p>My expertise lies in Python, Java, C, and a suite of web technologies, fueled by a 
-                        passion for crafting solutions that stand at the intersection of efficiency and innovation. 
-                        My interests in Machine Learning and Artificial Intelligence fuels my creativity, 
-                        ambition, and problem-solving skills.</p>
-                    <p>I possess a quiet confidence, coupled with a natural curiosity, and I'm continuously honing my skills 
-                        to tackle design challenges with finesse. I'm proud of a video compression platform that I created 
-                        with a bunch of friends that used ML algorithms focusing on SR-GANs to compress and decompress frames 
-                        beating a few OpenCV algorithms.</p>
-                    <p>As a software engineer, I thrive on collaboration and continuous learning, always seeking to explore 
-                        the latest technologies and methodologies.</p>
+                    <ul>
+                        <li>
+                            <p>Dedicated and passionate professional with a Master of Science degree in Artificial Intelligence.</p>
+                        </li>
+                        <li>
+                            <p>Gained extensive knowledge in machine learning, deep learning, web development, and software development fundamentals through my academic journey.</p>
+                        </li>
+                        <li>
+                            <p>Have a strong foundation in programming languages such as Java and Python.</p>
+                        </li>
+                        <li>
+                            <p>Expertise in tools and technologies like React, Node.js, AWS, Docker, Tensorflow, Scikit-Learning, MySQL, Firebase, and more.</p>
+                        </li>
+                        <li>
+                            <p>Notable among my accomplishments is the development of a collaborative video compression platform, leveraging ML models such as SR-GANs to surpass conventional OpenCV methods.</p>
+                        </li>
+                        <li>
+                            <p>Developed strong problem-solving and collaboration skills while working in a fast-paced environment because of my work as a Software Developer at a Infonikka.</p>
+                        </li>
+                        <li>
+                            <p>Continuously exploring cutting-edge technologies and methodologies to remain at the forefront of innovation.</p>
+                        </li>
+                    </ul>
                     <Link onClick={handleDownload} className='flat-button'>MY RESUME</Link>
                 </div>
 

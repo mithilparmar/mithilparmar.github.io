@@ -96,6 +96,18 @@
             }
         }
 
+        a.skills-link {
+            &:after {
+                content: 'SKILLS';
+            }
+        }
+
+        a.journey-link {
+            &:after {
+                content: 'JOURNEY';
+            }
+        }
+
         a.active {
             svg {
                 color: #C6DE41;
@@ -135,10 +147,16 @@
 
 @media screen and (max-width: 1200px) {
     .nav-bar {
-        background: transparent;
-        position: initial;
+        background: #071C21;
+        position: fixed;
         height: auto;
         min-height: auto;
+        width: 100%;
+
+        .logo {
+            float: left;
+            padding-left: 20px;
+        }
 
         ul, nav {
             display: none;
@@ -185,6 +203,27 @@
                 }
             }
         }
+
+        ul {
+            width: 100%;
+            height: auto;
+            background: #071C21;
+            bottom: 10px;
+            left: 0;
+            position: fixed;
+            z-index: 2;
+            margin: 0;
+            li {
+                a {
+                    display: flex;
+                    justify-content: right;
+                    align-items: center;
+                    padding: 10px;
+                    padding-right: 20px;
+                }
+            }
+        }
+        
         .mobile-show {
             display: block;
         }
@@ -193,8 +232,8 @@
         .close-icon {
             display: block;
             position: absolute;
-            top: 15px;
-            right: 15px;
+            top: 25px;
+            right: 20px;
             color: #C6DE41;
         }
     }

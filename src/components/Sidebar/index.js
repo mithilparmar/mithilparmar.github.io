@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom'
 import LogoM from '../../assets/images/logo-m.png'
 import LogoSubtitle from '../../assets/images/logo_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faClose, faEnvelope, faHome, faSuitcase, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faClose, faEnvelope, faGear, faHome, faLightbulb, faSuitcase, faUser } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { useState } from 'react'
 
@@ -39,10 +39,28 @@ const Sidebar = () => {
                     onClick={() => setShowNav(false)}
                     exact='true' 
                     activeclassname='active' 
+                    className='skills-link' 
+                    to='/skills'
+                >
+                    <FontAwesomeIcon icon={faGear} color='#153B44' />
+                </NavLink>
+                <NavLink 
+                    onClick={() => setShowNav(false)}
+                    exact='true' 
+                    activeclassname='active' 
+                    className='journey-link' 
+                    to='/journey'
+                >
+                    <FontAwesomeIcon icon={faSuitcase} color='#153B44' />
+                </NavLink>
+                <NavLink 
+                    onClick={() => setShowNav(false)}
+                    exact='true' 
+                    activeclassname='active' 
                     className='project-link' 
                     to='/project'
                 >
-                    <FontAwesomeIcon icon={faSuitcase} color='#153B44' />
+                    <FontAwesomeIcon icon={faLightbulb} color='#153B44' />
                 </NavLink>
                 <NavLink 
                     onClick={() => setShowNav(false)}
@@ -64,14 +82,14 @@ const Sidebar = () => {
                     />
                 )}
             </nav>
-            <ul>
+            <ul className={showNav ? 'mobile-show' : ''}>
                 <li>
                     <a 
                         target='_blank' 
                         rel='noreferrer' 
                         href='https://www.linkedin.com/in/mithilparmar/'
                     >
-                        <FontAwesomeIcon icon={faLinkedin} color='#153B44' />
+                        <FontAwesomeIcon onClick={() => setShowNav(false)} icon={faLinkedin} color='#153B44' />
                     </a>
                 </li>
                 <li>
@@ -80,7 +98,7 @@ const Sidebar = () => {
                         rel='noreferrer' 
                         href='https://github.com/mithilparmar'
                     >
-                        <FontAwesomeIcon icon={faGithub} color='#153B44' />
+                        <FontAwesomeIcon onClick={() => setShowNav(false)} icon={faGithub} color='#153B44' />
                     </a>
                 </li>
                 <li>
@@ -89,7 +107,7 @@ const Sidebar = () => {
                         rel='noreferrer' 
                         href='https://instagram.com/mithilparmar__'
                     >
-                        <FontAwesomeIcon icon={faInstagram} color='#153B44' />
+                        <FontAwesomeIcon onClick={() => setShowNav(false)} icon={faInstagram} color='#153B44' />
                     </a>
                 </li>
             </ul>
