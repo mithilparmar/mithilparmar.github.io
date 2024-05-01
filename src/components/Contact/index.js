@@ -110,18 +110,18 @@ const Contact = () => {
                 <div className='info-map'>
                     Mithil Parmar
                     <br />
-                    787 The Alameda
+                    1601 Birchmeadow Ct
                     <br />
-                    San Jose, CA 95126
+                    San Jose, CA 95131
                     <br />
                     USA
                     <br />
                     <span>mithilparmar09@gmail.com</span>
                 </div>
                 <div className='map-wrap'>
-                    <MapContainer center={[37.33230384164745, -121.9055125730179]} zoom={15}>
+                    <MapContainer center={[37.38770700752998, -121.89001679420471]} zoom={15}>
                     <TileLayer url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png' />
-                    <Marker position={[37.33230384164745, -121.9055125730179]}>
+                    <Marker position={[37.38770700752998, -121.89001679420471]}>
                         <Popup>Mithil lives here, come over for a cup of coffee :)</Popup>
                     </Marker>
                     </MapContainer>
