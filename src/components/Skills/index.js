@@ -23,6 +23,7 @@ const Skills = () => {
 
     const handleSelectedSkill = (data) => {
         setSelectedSkill(data);
+        window.scrollTo(0, 0);
     };
     
     return (
