@@ -102,6 +102,10 @@
     opacity: 0;
     animation: fadeIn 1s 1.5s;
     animation-fill-mode: forwards;
+
+    a {
+        text-decoration: none;
+    }
   
     span {
         font-size: 16px;
