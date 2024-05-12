@@ -116,7 +116,7 @@ const Contact = () => {
                     <br />
                     USA
                     <br />
-                    <a href='mailto:mithilparmar09@gmail.com'><span>mithilparmar09@gmail.com</span></a>
+                    <a href='mailto:me@mithilparmar.com'><span>me@mithilparmar.com</span></a>
                 </div>
                 <div className='map-wrap'>
                     <MapContainer center={[37.38770700752998, -121.89001679420471]} zoom={15}>
