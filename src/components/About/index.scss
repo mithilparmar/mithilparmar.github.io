@@ -1,0 +1,75 @@
+.profile-container {
+    display: flex;
+    justify-content: flex-end; /* Move content to the right side */
+    align-items: center; /* Move content to the center vertically */
+    height: 100%; /* Adjust the height as needed */
+    width: 82.5%; /* Adjust the width as needed */
+    padding: 20px; /* Add padding to create space */
+}
+
+.profile-pic {
+    width: 350px; /* Set the width as desired */
+    height: 350px; /* Set the height to be equal to the width for a perfect circle */
+    transition: all .3s;
+    border-radius: 15px;
+    box-shadow: 2rem 2rem #C6DE41;
+    border: 4px solid #2D6E7E; /* Adjust the color and size of the border as desired */
+    object-fit: cover; /* This will cover the area without stretching the image */
+}
+
+.profile-pic:hover {
+    transform: translate(-0.5rem, -0.5rem);
+    box-shadow: 3rem 3rem #C6DE41;
+}
+
+.flat-button {
+    color: #C6DE41;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 10px 18px;
+    border: 1px solid #C6DE41;
+    margin-top: 25px;
+    float: left;
+    animation: fadeIn 1s 1.8s backwards;
+    white-space: nowrap;
+
+    &:hover {
+        background: #C6DE41;
+        color: #071C21;
+    }
+}
+
+
+@media screen and (max-width: 1440px) {
+
+    .profile-pic {
+        width: 300px;
+        height: 300px;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+    .flat-button {
+        float: none;
+        display: block;
+        margin: 20px auto 0 auto;
+        width: 170px;
+    }
+
+    .profile-container {
+        justify-content: center;
+        padding-bottom: 50px;
+        width: auto;
+    }
+
+    .profile-pic {
+        width: 200px;
+        height: 200px;
+    }
+
+}

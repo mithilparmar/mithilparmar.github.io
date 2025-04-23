@@ -1,0 +1,16 @@
+highlight yellow    #ffd700  =>  #C6DE41
+background blue     #022c43  =>  #153B44
+body font grey      #444  =>  #FFFFFF
+navbar icons grey   #4d4d4e  =>  #153B44
+navbar black        #181818  =>  #071C21
+
+logo m dark:    #2D6E7E
+logo m light:   #C6DE41
+
+
+Steps:
+git add .
+git commit -m "message"
+git push origin main
+npm run build
+npm run deploy
