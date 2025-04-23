@@ -34,6 +34,7 @@ const Project = () => {
                                 <div className='content'>
                                     <p className='title'>{proj.title}</p>
                                     <h4 className='description'>{proj.description}</h4>
+                                    <h4 className='tech'><b>Tech Stack:</b> {proj.tech}</h4>
                                     <button
                                         className='btn'
                                         onClick={() => window.open(proj.url)}

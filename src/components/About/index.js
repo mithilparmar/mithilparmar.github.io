@@ -37,10 +37,10 @@ const About = () => {
                     </h1>
                     <ul>
                         <li>
-                            <p>Dedicated and passionate professional with a Master of Science degree in Artificial Intelligence.</p>
+                            <p>AI-focused Software Engineer with an M.S. in Artificial Intelligence and 2+ years of full-stack experience building ML-integrated web apps.</p>
                         </li>
                         <li>
-                            <p>Gained extensive knowledge in machine learning, deep learning, web development, and software development fundamentals through my academic journey.</p>
+                            <p>Built a strong foundation in ML, DL, and software engineering through hands-on academic and industry projects.</p>
                         </li>
                         <li>
                             <p>Have a strong foundation in programming languages such as Java and Python.</p>
@@ -49,16 +49,16 @@ const About = () => {
                             <p>Expertise in tools and technologies like React, Node.js, AWS, Docker, Tensorflow, Scikit-Learning, MySQL, Firebase, and more.</p>
                         </li>
                         <li>
-                            <p>Notable among my accomplishments is the development of a collaborative video compression platform, leveraging ML models such as SR-GANs to surpass conventional OpenCV methods.</p>
+                            <p>Led the development of a collaborative SR-GAN-based video compression API, outperforming traditional OpenCV methods.</p>
                         </li>
                         <li>
                             <p>Developed strong problem-solving and collaboration skills while working in a fast-paced environment because of my work as a Software Developer at a Infonikka.</p>
                         </li>
                         <li>
-                            <p>Continuously exploring cutting-edge technologies and methodologies to remain at the forefront of innovation.</p>
+                            <p>Passionate about experimenting with emerging tech like LLMs, edge ML, and real-time AI experiences.</p>
                         </li>
                     </ul>
-                    <Link onClick={handleDownload} className='flat-button'>MY RESUME</Link>
+                    <Link onClick={handleDownload} className='flat-button'>VIEW MY RESUME</Link>
                 </div>
 
                 <div class="profile-container">

@@ -127,6 +127,14 @@
         padding-left: 0;
     }
 
+    .techstack {
+        width: 100%;
+        display: flex;
+        gap: 12px;
+        margin-top: -10px;
+        padding-left: 0;
+    }
+
     .grades {
         width: 100%;
         display: flex;
@@ -141,6 +149,15 @@
     }
 
     .skill {
+        font-size: 15px;
+        font-weight: 400;
+        color: #fff;
+        @media only screen and (max-width: 768px) {
+            font-size: 12px;
+        }
+    }
+
+    .tech {
         font-size: 15px;
         font-weight: 400;
         color: #fff;

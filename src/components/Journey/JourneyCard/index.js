@@ -32,6 +32,19 @@ const JourneyCard = ({ journey }) => {
                         </div>
                     </>
                 }
+                {journey?.techstack &&
+                    <>
+                        <br />
+                        <div className='techstack'>
+                            <b>Tech:</b>
+                            <div className='item-wrapper'>
+                                {journey?.techstack?.map((tech, index) => (
+                                    <div className='tech'>• {tech}</div>
+                                ))}
+                            </div>
+                        </div>
+                    </>
+                }
                 {journey?.grades &&
                     <>
                         <br />

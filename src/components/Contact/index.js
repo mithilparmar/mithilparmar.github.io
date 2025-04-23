@@ -53,10 +53,7 @@ const Contact = () => {
                         />
                     </h1>
                     <p>
-                    Embarking on a quest for the ideal job that resonates with my passions! 
-                    Whether you have an opportunity, questions about my journey, or simply 
-                    want to say hello, my inbox is open for your emails. 
-                    Your guidance, opportunities, and conversations are eagerly awaited and highly valued!
+                    I'm always open to exciting opportunities, collaboration, or simply a friendly hello. Whether you're reaching out about a role, project, or just curious about my journey — I'd love to connect. Your messages are always welcome and appreciated!
                     </p>
                     <div className='contact-form'>
                         <form ref={refForm} onSubmit={sendEmail}>
