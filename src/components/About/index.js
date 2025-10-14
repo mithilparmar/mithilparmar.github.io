@@ -37,28 +37,19 @@ const About = () => {
                     </h1>
                     <ul>
                         <li>
-                            <p>AI-focused Software Engineer with an M.S. in Artificial Intelligence and 2+ years of full-stack experience building ML-integrated web apps.</p>
+                            <p>I'm a software engineer who loves working where data, machine learning, and system design meet. For the past two years, I've been building APIs, data pipelines, and ML-powered tools that make teams faster and products smarter.</p>
                         </li>
                         <li>
-                            <p>Built a strong foundation in ML, DL, and software engineering through hands-on academic and industry projects.</p>
+                            <p>My background in Artificial Intelligence (M.S., San José State University) gave me a deep understanding of how models work—and my time at Infonikka taught me how to ship them in production.</p>
                         </li>
                         <li>
-                            <p>Have a strong foundation in programming languages such as Java and Python.</p>
+                            <p>I've worked across Python, Flask, TensorFlow, and AWS to process over 100K records a day, automate reports, and integrate LLMs into production workflows.</p>
                         </li>
                         <li>
-                            <p>Expertise in tools and technologies like React, Node.js, AWS, Docker, Tensorflow, Scikit-Learning, MySQL, Firebase, and more.</p>
-                        </li>
-                        <li>
-                            <p>Led the development of a collaborative SR-GAN-based video compression API, outperforming traditional OpenCV methods.</p>
-                        </li>
-                        <li>
-                            <p>Developed strong problem-solving and collaboration skills while working in a fast-paced environment because of my work as a Software Developer at a Infonikka.</p>
-                        </li>
-                        <li>
-                            <p>Passionate about experimenting with emerging tech like LLMs, edge ML, and real-time AI experiences.</p>
+                            <p>I'm currently exploring how large language models and edge AI can be used to build real-time, data-aware systems that scale.</p>
                         </li>
                     </ul>
-                    <Link onClick={handleDownload} className='flat-button'>VIEW MY RESUME</Link>
+                    <Link onClick={handleDownload} className='flat-button'>VIEW MY FULL RESUME</Link>
                 </div>
 
                 <div class="profile-container">

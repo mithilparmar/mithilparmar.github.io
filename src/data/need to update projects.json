@@ -1,0 +1,37 @@
+,
+    {
+      "cover": "/projects/happ/cover.png",
+      "title": "HAPP — Smart Healthcare Activity Prediction",
+      "description": "FP-Growth + K-Means + Bayesian Networks on IoT signals.",
+      "tech": "Python, FP-Growth, K-Means, Bayesian Networks",
+      "metrics": ["Improved anomaly detection for routines"],
+      "url": "",
+      "notebook": "https://colab-or-gist",
+      "category": "DS/Analytics"
+    },
+    {
+      "cover": "/projects/ai-healthcare-chatbot/cover.png",
+      "title": "AI Healthcare Chatbot",
+      "description": "Rule-based + ML intents; MongoDB persistence.",
+      "tech": "Python, ML, MongoDB",
+      "url": "",
+      "demo": "https://your-demo-or-video",
+      "category": "Web/Full-Stack"
+    },
+    {
+      "cover": "/projects/price-monitor/cover.png",
+      "title": "Price Monitoring System",
+      "description": "Scraping + alerts for e-commerce price changes.",
+      "tech": "Python, BeautifulSoup",
+      "url": "adasd",
+      "category": "Web/Full-Stack"
+    },
+    {
+      "cover": "/projects/ipl-auction/cover.png",
+      "title": "IPL Auction Simulator",
+      "description": "Auction logic with real-time price dynamics.",
+      "tech": "Python",
+      "url": "asas",
+      "demo": "https://your-demo-or-video",
+      "category": "Web/Full-Stack"
+    }

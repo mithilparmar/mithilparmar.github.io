@@ -62,6 +62,19 @@
             text-overflow: unset;
         }
 
+        .desc-list {
+            color: #fff;            /* ensure visible even with global resets */
+            list-style: disc inside;
+            //padding-left: 1.1rem;
+            margin: 0 0 8px;
+        }
+            
+        .desc-list li {
+            display: list-item;     /* guard against CSS resets */
+            line-height: 1.45;
+            margin: 0 0 6px;
+        }
+
         @media only screen and (max-width: 768px) {
             font-size: 12px;
         }
@@ -119,27 +132,36 @@
         }
     }
 
-    .skills {
-        width: 100%;
-        display: flex;
-        gap: 12px;
-        margin-top: -10px;
-        padding-left: 0;
-    }
-
+    .skills,
     .techstack {
         width: 100%;
         display: flex;
         gap: 12px;
         margin-top: -10px;
         padding-left: 0;
+
+        b {
+            flex: 0 0 auto;
+            font-weight: 600;
+            color: #C6DE41;     // subtle label color
+            font-size: 13px;
+            margin-top: 3px;
+        }
     }
 
     .grades {
         width: 100%;
         display: flex;
         gap: 12px;
-        margin-top: -10px;
+        padding-left: 0;
+        font-size: 13px;
+
+        b {
+            flex: 0 0 auto;
+            font-weight: 600;
+            color: #C6DE41;     // subtle label color
+            font-size: 13px;
+        }
     }
 
     .item-wrapper {
@@ -148,29 +170,29 @@
         gap: 8px;
     }
 
-    .skill {
-        font-size: 15px;
-        font-weight: 400;
-        color: #fff;
-        @media only screen and (max-width: 768px) {
-            font-size: 12px;
-        }
-    }
-
+    .skill,
     .tech {
-        font-size: 15px;
-        font-weight: 400;
-        color: #fff;
-        @media only screen and (max-width: 768px) {
-            font-size: 12px;
-        }
-    }
+        font-size: 13px;
+        font-weight: 500;
+        color: #e9f7fb;                          // chip text
+        background: rgba(45, 110, 126, 0.2);     // chip bg
+        border: 1px solid rgba(45, 110, 126, 0.35);
+        padding: 4px 8px;
+        border-radius: 999px;                     // pill
+        line-height: 1.2;
+        white-space: nowrap;
+        transition: background .2s ease, border-color .2s ease, transform .05s ease;
 
-    .grade {
-        font-size: 15px;
-        font-weight: 400;
-        color: #fff;
-        @media only screen and (max-width: 768px) {
+        &:hover {
+            background: rgba(45, 110, 126, 0.3);
+            border-color: rgba(45, 110, 126, 0.55);
+        }
+
+        &:active {
+            transform: translateY(1px);
+        }
+
+        @media (max-width: 768px) {
             font-size: 12px;
         }
     }

@@ -44,7 +44,7 @@
                 rgba(0, 0, 0, 0.5) 0,
                 rgba(0, 0, 0, 1)
             );
-            bottom: -70px;
+            bottom: -90px;
         }
 
         .title {
@@ -80,7 +80,7 @@
 
         .btn {
             margin-top: 10px;
-            margin-left: 20px;
+            margin-left: 0px;
             margin-bottom: 20px;
             text-decoration: none;
             padding: 0 23px;
@@ -127,8 +127,98 @@
             bottom: 0;
             background: transparent;
         }
+
+        /* metrics list under description */
+        .metrics {
+            padding: 0 20px 4px 38px; /* aligns with your text */
+            margin: 0 0 6px;
+            list-style: disc;
+            color: #FFFFFF;
+            font-size: 14px;
+            li { margin: 0 0 4px; line-height: 1.35; }
+        }
+
+        /* link buttons container */
+        .links {
+            display: flex;
+            gap: 8px;
+            margin-top: 10px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* Tech stack pills */
+        .tech-stack {
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+            padding: 0 20px;
+            margin-top: 6px;
+
+            b {
+                flex: 0 0 auto;
+                font-weight: 600;
+                color: #cde7ef;
+                font-size: 13px;
+                margin-top: 4px;
+            }
+        }
+
+        .tech-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tech-chip {
+            font-size: 13px;
+            font-weight: 600;
+            color: #e9f7fb;                 
+            background: rgba(45, 110, 126, 0.2);            
+            border: 1px solid rgba(45, 110, 126, 0.35);      
+            padding: 4px 10px;
+            border-radius: 999px;
+            line-height: 1.2;
+            white-space: nowrap;
+            transition: background .2s ease, border-color .2s ease, transform .05s ease;
+
+            &:hover {
+                background: rgba(45, 110, 126, 0.3);
+                border-color: rgba(45, 110, 126, 0.55);
+            }
+            &:active {
+                transform: translateY(1px);
+            }
+
+            @media (max-width: 1200px) { 
+                font-size: 12px; 
+            }
+        }
+
     }
 }
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0 18px 0;
+}
+
+.btn-filter {
+  border: 1px solid #C6DE41;
+  color: #C6DE41;
+  background: transparent;
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 12px;
+  letter-spacing: .5px;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+.btn-filter:hover { transform: translateY(-1px); background: rgba(198,222,65,.12); }
+.btn-filter.active { background: #C6DE41; color: #071C21; }
+
 
 @media screen and (max-width: 1200px) {
     .container.project-page {

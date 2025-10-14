@@ -1,25 +1,100 @@
 {
-    "projects": [
-        {
-            "cover": "/projects/data-compression-platform/cover.png",
-            "title": "Data Compression Platform",
-            "description": "Developed a high-performance video compression platform using Super-Resolution GANs (SR-GANs) to significantly outperform traditional OpenCV techniques in both visual quality and compression ratio. Integrated into a lightweight Flask-based API, optimized for web and mobile deployment.",
-            "tech": "Python, SR-GAN, Flask, OpenCV, Computer Vision, ML",
-            "url": "https://github.com/mithilparmar/data-compression-platform"
-        },
-        {
-            "cover": "/projects/steam-game-recommender-system/cover.png",
-            "title": "Games Recommender System",
-            "description": "Built an interactive game recommendation engine using a Restricted Boltzmann Machine (RBM) for collaborative filtering on user preferences. Designed a responsive frontend with React.js and integrated the backend via Flask APIs for dynamic game suggestions.",
-            "tech": "Python, Flask, React.js, RBM, Data Mining",
-            "url": "https://github.com/mithilparmar/Steam-Game-Recommender-System"
-        },
-        {
-            "cover": "/projects/agent57/cover.png",
-            "title": "Agent57",
-            "description": "Implemented the Agent57 RL algorithm to master Atari-like games using Deep Q Networks, combining episodic memory and exploration strategies. Tuned reward optimization and model stability to improve average episodic scores across various environments.",
-            "tech": "Python, DQN, Gym, NumPy, RL Algorithms",
-            "url": "https://github.com/mithilparmar/Reinforcement-Learning-Agent-Replication-Agent57"
-        }
-    ]
+  "projects": [
+    {
+      "cover": "/projects/data-compression-platform/cover.png",
+      "title": "Data Compression Platform",
+      "description": "SR-GAN video compression with measurable gains over OpenCV.",
+      "tech": "Python, TensorFlow, ESRGAN, Flask, OpenCV",
+      "metrics": ["≈4× compression", "≈5% lower RMSE", "Avg RMSE ≈ 0.16"],
+      "url": "https://github.com/mithilparmar/data-compression-platform",
+      "category": "Featured"
+    },
+    {
+      "cover": "/projects/steam-game-recommender-system/cover.png",
+      "title": "Games Recommender System",
+      "description": "RBM collaborative filtering; Flask API + React UI.",
+      "tech": "Python, TensorFlow, Flask, React",
+      "metrics": ["12K users, 5K games", "Outperformed CF baseline"],
+      "url": "https://github.com/mithilparmar/Steam-Game-Recommender-System",
+      "category": "Recommenders/RL"
+    },
+    {
+      "cover": "/projects/agent57/cover.png",
+      "title": "Agent57 (Replication)",
+      "description": "Deep RL with episodic memory and exploration tuning.",
+      "tech": "Python, DQN, Gym, NumPy",
+      "metrics": ["Improved episodic scores on target envs"],
+      "url": "https://github.com/mithilparmar/Reinforcement-Learning-Agent-Replication-Agent57",
+      "category": "Recommenders/RL"
+    },
+    {
+      "cover": "/projects/tldr-ai/cover.png",
+      "title": "TLDR.AI — Article Summarizer",
+      "description": "NLP summarization with DistilBART/T5; interactive app.",
+      "tech": "Python, HuggingFace, Streamlit, Firebase",
+      "metrics": ["ROUGE-1 = 0.746", "100+ articles scraped"],
+      "url": "https://github.com/mithilparmar/tldr-ai",
+      "demo": "https://tldr-ai-n8gnerpc6a8f8vhagupftx.streamlit.app/",
+      "category": "ML/CV/NLP"
+    },
+    {
+      "cover": "/projects/student-performance/cover.png",
+      "title": "Student Performance Analysis",
+      "description": "EDA + hypothesis testing + regression; actionable insights.",
+      "tech": "Python (Pandas, Statsmodels), R (tidyverse)",
+      "metrics": ["Adj. R² ≈ 0.22", "Study time+, Absences−, Alcohol−"],
+      "notebook": "/projects/student-performance/report.pdf",
+      "category": "DS/Analytics"
+    },
+    {
+      "cover": "/projects/emotion-insight/cover.png",
+      "title": "Emotion Insight — Real-Time Emotion Classification",
+      "description": "VGG19 with augmentation; balanced per-class accuracy.",
+      "tech": "Python, TensorFlow, Keras, OpenCV, Scikit-learn",
+      "metrics": ["Strong precision on Neutral/Happy/Surprise"],
+      "url": "",
+      "demo": "https://huggingface.co/spaces/mithilparmar/emotion-insight",
+      "category": "ML/CV/NLP"
+    },
+    {
+      "cover": "/projects/flowers-tpu/cover.png",
+      "title": "Flowers on TPU",
+      "description": "Imbalanced dataset; augmentation + model comparison.",
+      "tech": "Python, TensorFlow, TPUs",
+      "metrics": ["ResNet101V2 (F1 ≈ 0.91)", "Top-50 on Kaggle"],
+      "url": "",
+      "notebook": "https://www.kaggle.com/code/mithilparmar09/cmpe-257-project",
+      "category": "ML/CV/NLP"
+    },
+    {
+      "cover": "/projects/subreddit-links/cover.png",
+      "title": "Subreddit Link Prediction",
+      "description": "Temporal graph; Node2Vec vs heuristics with sentiment edges.",
+      "tech": "Python, NetworkX, Node2Vec, Pandas",
+      "metrics": ["Node2Vec > baselines on precision/recall"],
+      "url": "",
+      "notebook": "https://colab.research.google.com/drive/1HsuackcCc_g0QP2ht_O_x5zcC5Hm13fY?usp=sharing",
+      "category": "DS/Analytics"
+    },
+    {
+      "cover": "/projects/hospital-admit-rl/cover.png",
+      "title": "Hospital Admit Policy (RL)",
+      "description": "Q-Learning + Monte Carlo; higher cumulative recoveries.",
+      "tech": "Python, RL",
+      "metrics": ["MC-augmented > vanilla Q-Learning"],
+      "url": "",
+      "notebook": "https://colab.research.google.com/drive/1hCMRERE5_GTXhl8AFNagNSMOWqcS8DOT?usp=sharing",
+      "category": "Recommenders/RL"
+    },
+    {
+      "cover": "/projects/mnist-cnn/cover.png",
+      "title": "Digits Recognition (MNIST)",
+      "description": "Simple CNN; clean baseline for model sanity.",
+      "tech": "Python, TensorFlow, Keras",
+      "metrics": ["~99% train, ~98% test accuracy"],
+      "url": "",
+      "demo": "https://huggingface.co/spaces/mithilparmar/mnist-cnn",
+      "category": "ML/CV/NLP"
+    }
+  ]
 }

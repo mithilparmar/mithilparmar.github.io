@@ -52,7 +52,7 @@ const Home = () => {
                     <h2>
                         <Typewriter
                             options={{
-                                strings: ['Full Stack Engineer', 'Machine Learning Engineer', 'Back End Developer', 'Front End Developer', 'Data Engineer', 'AI Enthusiast'],
+                                strings: ['Software Engineer', 'Machine Learning Engineer', 'Data Engineer', 'Data Scientist'],
                                 autoStart: true,
                                 loop: true,
                                 delay: 100,

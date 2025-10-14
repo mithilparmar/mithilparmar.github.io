@@ -1,7 +1,12 @@
 import React from 'react'
 import './index.scss'
 
+
 const JourneyCard = ({ journey }) => {
+
+    const bullets = Array.isArray(journey?.desc) ? journey.desc : [];
+    const renderBullets = bullets.length ? bullets : [String(journey?.desc ?? '')];
+
     return (
         <div className='card'>
             <div className='top'>
@@ -15,10 +20,25 @@ const JourneyCard = ({ journey }) => {
                 </div>
             </div>
             <div className='description'>
-                {journey?.desc &&
-                    <span>{journey?.desc}</span>
+                {journey?.desc && (
+                    <div className='desc-list'>
+                        {renderBullets.map((line, idx) => (
+                        <div
+                            key={`${journey.id}-desc-${idx}`}
+                            style={{
+                            color: '#fff',
+                            margin: '0 0 6px',
+                            lineHeight: 1.45,
+                            display: 'block',
+                            }}
+                        >
+                            • {line}
+                        </div>
+                        ))}
+                    </div>
+                )}
 
-                }
+                
                 {journey?.skills &&
                     <>
                         <br />
@@ -26,7 +46,7 @@ const JourneyCard = ({ journey }) => {
                             <b>Skills:</b>
                             <div className='item-wrapper'>
                                 {journey?.skills?.map((skill, index) => (
-                                    <div className='skill'>• {skill}</div>
+                                    <div className='skill'>{skill}</div>
                                 ))}
                             </div>
                         </div>
@@ -39,7 +59,7 @@ const JourneyCard = ({ journey }) => {
                             <b>Tech:</b>
                             <div className='item-wrapper'>
                                 {journey?.techstack?.map((tech, index) => (
-                                    <div className='tech'>• {tech}</div>
+                                    <div className='tech'>{tech}</div>
                                 ))}
                             </div>
                         </div>
