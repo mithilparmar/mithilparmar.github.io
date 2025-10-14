@@ -41,7 +41,7 @@
       "cover": "/projects/student-performance/cover.png",
       "title": "Student Performance Analysis",
       "description": "EDA + hypothesis testing + regression; actionable insights.",
-      "tech": "Python (Pandas, Statsmodels), R (tidyverse)",
+      "tech": "Python (Pandas & Statsmodels), R (tidyverse)",
       "metrics": ["Adj. R² ≈ 0.22", "Study time+, Absences−, Alcohol−"],
       "notebook": "/projects/student-performance/report.pdf",
       "category": "DS/Analytics"
