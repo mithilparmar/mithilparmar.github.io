@@ -107,18 +107,18 @@ const Contact = () => {
                 <div className='info-map'>
                     Mithil Parmar
                     <br />
-                    1601 Birchmeadow Ct
+                    52/A, Shreenagar Society
                     <br />
-                    San Jose, CA 95131
+                    Vadodara,GJ 390020
                     <br />
-                    USA
+                    INDIA
                     <br />
                     <a href='mailto:me@mithilparmar.com'><span>me@mithilparmar.com</span></a>
                 </div>
                 <div className='map-wrap'>
-                    <MapContainer center={[37.38770700752998, -121.89001679420471]} zoom={15}>
+                    <MapContainer center={[22.3003172, 73.1735675]} zoom={15}>
                     <TileLayer url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png' />
-                    <Marker position={[37.38770700752998, -121.89001679420471]}>
+                    <Marker position={[22.3003172, 73.1735675]}>
                         <Popup>Mithil lives here, come over for a cup of coffee :)</Popup>
                     </Marker>
                     </MapContainer>
